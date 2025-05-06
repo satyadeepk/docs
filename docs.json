@@ -33,32 +33,11 @@
             ]
           }
         ]
-      },
-      
-    {
-        "tab": "Zuddl API Reference",
-        "openapi": "https://app.zuddl.com/api/v3/api-docs/api-product"
-    },
+      },      
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
+          "tab": "Zuddl API Reference",
+          "openapi": "https://app.zuddl.com/api/v3/api-docs/api-product"
+      }      
     ],
     "global": {
       "anchors": [
