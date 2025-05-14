@@ -41,7 +41,7 @@
       {
           "tab": "Webhook Reference",
           "openapi": { 
-            "source": "/webhooks.json",
+            "source": "webhooks.json",
             "directory":"api-reference"
           }
       }
