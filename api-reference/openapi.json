@@ -203,7 +203,7 @@
   "webhooks": {
     "event.created": {
       "post": {
-        "tags": ["Webhooks"],
+        "tags": ["EventWebhooks"],
         "summary": "New event created",
         "description": "This webhook is triggered when a new event is created in the system.",
         "operationId": "event.created",
@@ -225,6 +225,41 @@
               "schema": {
                 "$ref": "#/components/schemas/org.events.app.domain.webhooks.EventCreatedWebhookRequestDTO",
                 "description": "Webhook payload for new event"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Return a 200 status to indicate that the data was received successfully"
+          }
+        }
+      }
+    },
+    "poll.created": {
+      "post": {
+        "tags": ["PollWebhooks"],
+        "summary": "New poll created",
+        "description": "This webhook is triggered when a new poll is created in the system.",
+        "operationId": "poll.created",
+        "parameters": [
+          {
+            "name": "X-Webhook-Signature",
+            "in": "header",
+            "description": "Signature to verify the webhook request",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Information about a new poll in the system",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/org.events.app.domain.webhooks.EventCreatedWebhookRequestDTO",
+                "description": "Webhook payload for new poll"
               }
             }
           }
