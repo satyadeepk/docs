@@ -37,7 +37,11 @@
       {
           "tab": "API Reference",
           "openapi": "https://setup.pre-prod.zuddl.io/api/v3/api-docs/api-product"
-      }      
+      },
+      {
+          "tab": "Webhook Reference",
+          "openapi": "api-reference/webhooks.json"
+      }
     ],
     "global": {
       "anchors": [
