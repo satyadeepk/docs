@@ -5,8 +5,6 @@
     "description": "Zuddl RESTful APIs let you interact with the Zuddl platform and take action for your event or webinar. They let you add attendees, get attendee details, get event details, and more.\n\nThe API response is returned in JSON, which your systems can easily consume.\n\nThe API parameters allow you to customize the response using filters, sorting, pagination, and other parameters.\n\n# Rate limits\n\n| Metrics | Value |\n| --- | --- |\n| Requests/second | 10 |\n| Burst or no. of concurrent calls allowed | 100 requests |\n| Total quota | 10000 requests/day |",
     "version": "1.0"
   },
-  "servers": [{ "url": "https://api.zuddl.com/" }],
-  "security": [{ "api_key": [] }],
   "paths": {},
   "components": {
     "schemas": {
@@ -93,7 +91,7 @@
             "example": "h826a64f-807-4289-9024-9a120792c3d8"
           },
           "location": {
-            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event$EventLocation",
+            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event-EventLocation",
             "description": "location of the event"
           },
           "virtualEventUrl": {
@@ -127,15 +125,15 @@
           }
         }
       },
-      "org.events.app.domain.api_product.event.Event$EventLocation": {
+      "org.events.app.domain.api_product.event.Event-EventLocation": {
         "properties": {
           "venue": { "type": "string", "description": "venue of the event" },
           "address": {
-            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event$EventLocation$EventLocationAddress",
+            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event-EventLocation-EventLocationAddress",
             "description": "address of the event"
           },
           "coordinates": {
-            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event$EventLocation$Coordinates",
+            "$ref": "#/components/schemas/org.events.app.domain.api_product.event.Event-EventLocation-Coordinates",
             "description": "coordinates of the event"
           },
           "mapUrl": {
@@ -145,7 +143,7 @@
           }
         }
       },
-      "org.events.app.domain.api_product.event.Event$EventLocation$Coordinates": {
+      "org.events.app.domain.api_product.event.Event-EventLocation-Coordinates": {
         "properties": {
           "latitude": {
             "type": "string",
@@ -159,7 +157,7 @@
           }
         }
       },
-      "org.events.app.domain.api_product.event.Event$EventLocation$EventLocationAddress": {
+      "org.events.app.domain.api_product.event.Event-EventLocation-EventLocationAddress": {
         "properties": {
           "address": { "type": "string", "description": "venue of the event" },
           "addressLine2": {
