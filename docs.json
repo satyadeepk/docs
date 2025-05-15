@@ -40,7 +40,7 @@
       },
       {
           "tab": "Webhook Reference",
-          "openapi": "https://p6vvgf58-8080.inc1.devtunnels.ms/api/v3/api-docs/webhook"
+          "openapi": { "source": "api-reference/openapi.json" }
       }
     ],
     "global": {
